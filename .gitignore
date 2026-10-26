@@ -1,0 +1,53 @@
+# Yours, not the repository's. install.sh creates config.json from
+# config.default.json on first run and adds any new settings afterwards.
+config.json
+
+# Runtime state and anything the app downloads or builds.
+.venv/
+.filetrust-updates/
+.network-updates/
+network-config-active.json
+.filetrust-activity/
+.filetrust-node-health.json
+.venv.broken-*/
+__pycache__/
+core/vaultmesh
+log/
+pieces/
+data/
+data_unzipped/
+drop/
+pid_records/
+upload_zips/
+dkg_public_keys/
+transfer_jobs/
+networks/
+dkg-recovery-v1/
+recovery-profiles.json
+storage_verification_queue/
+policies.json
+directory_cache.json
+requester_keys.json
+keys/
+
+# Your account key, encrypted with your password. Never belongs in a clone.
+keyvault.json
+
+# When this install last read the network config service.
+network_config_state.json
+
+# Your own lists, written by the app.
+trusted_owners.json
+sync_state.json
+
+# The key for a recovery request that has been paid for but not yet answered.
+recovery_pending.json
+
+.filetrust-docker/
+files/
+core/vaultmesh.part
+core/vaultmesh.sums
+.container-code.json
+.container-settings.json
+.container-owner.json
+.browser-auth

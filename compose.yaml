@@ -1,0 +1,43 @@
+x-app: &app
+  image: filetrust-discovery:${FILETRUST_DOCKER_PROJECT:-filetrust-discovery}
+  build:
+    context: .
+    target: runtime
+    network: host
+  platform: linux/amd64
+  init: true
+  network_mode: host
+  read_only: true
+  user: "${FILETRUST_UID:-10001}:${FILETRUST_GID:-10001}"
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  tmpfs:
+    - /run/filetrust:rw,nosuid,nodev,noexec,size=128m,uid=${FILETRUST_UID:-10001},gid=${FILETRUST_GID:-10001},mode=0700
+    - /tmp:rw,nosuid,nodev,size=256m,uid=${FILETRUST_UID:-10001},gid=${FILETRUST_GID:-10001},mode=1777
+  ulimits:
+    core: 0
+  logging:
+    driver: json-file
+    options: {max-size: "10m", max-file: "5"}
+  volumes:
+    - app:/app
+
+services:
+  node:
+    <<: *app
+    command: [run]
+    restart: unless-stopped
+    stop_grace_period: 1h
+    healthcheck:
+      test: [CMD, python, /opt/filetrust-source/container_cli.py, health]
+      interval: 15s
+      timeout: 5s
+      start_period: 5m
+      retries: 3
+  setup:
+    <<: *app
+    profiles: [tools]
+    command: [idle]
+
+volumes:
+  app:

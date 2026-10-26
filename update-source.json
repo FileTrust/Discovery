@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "product": "discovery",
+  "repository": "FileTrust/Discovery",
+  "metadata_tag": "filetrust-updates",
+  "channel": "stable"
+}

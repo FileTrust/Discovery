@@ -1,0 +1,181 @@
+{
+  "files": {
+    ".dockerignore": {
+      "mode": 420,
+      "sha256": "92d22044a6447a78091aa393a82783aa7cc03dc95651fa943c2ec1299284e74c",
+      "size": 665
+    },
+    ".gitignore": {
+      "mode": 420,
+      "sha256": "f5929783e13938f972d7186fe0ff64e0b712a6b90a442132810f6bc85da4842a",
+      "size": 1114
+    },
+    "DISCOVERY_DEPLOYMENT.md": {
+      "mode": 420,
+      "sha256": "46234ba41f9431562fcd0941f50c988b31a3162e1c891c7fbc0e1165de16009c",
+      "size": 7428
+    },
+    "Dockerfile": {
+      "mode": 420,
+      "sha256": "1db032ead72749a702a2ba4f77d9c622383ffdef27cba16feaccea835aa3b032",
+      "size": 1187
+    },
+    "LICENSE": {
+      "mode": 420,
+      "sha256": "cc44a1cf96403306f3fea9d8d73e6a177c34b8df8b96b62a4834c7425e1dca15",
+      "size": 3773
+    },
+    "README.md": {
+      "mode": 420,
+      "sha256": "16ad2eb8602b34a5dfad0f2c31abc9e682d0b842e2c1ac9f8cc637edf1f2326e",
+      "size": 13897
+    },
+    "THIRD-PARTY-NOTICES.md": {
+      "mode": 420,
+      "sha256": "6fd1145a4de88de81e745d1ed05b3340ca38761dbf04f283e6b5f9fd2726a93d",
+      "size": 888
+    },
+    "VERSION": {
+      "mode": 420,
+      "sha256": "1f930dd1f133c1f97a94fe3acb8db34372cf4c01ffdb2b3ff4ca72f9494121e9",
+      "size": 6
+    },
+    "compose.yaml": {
+      "mode": 420,
+      "sha256": "21faa3c177bf2215bd91eeecfa2bd60c5ebf42f3a24403bdd730a68baf7e3c74",
+      "size": 1060
+    },
+    "config.default.json": {
+      "mode": 420,
+      "sha256": "b92e894b7856bb73376fb42fb1b48bb86895a78870bf2f45a635df137190c698",
+      "size": 2571
+    },
+    "container_cli.py": {
+      "mode": 420,
+      "sha256": "8e13a1408c07623ee101f9fe4bd463cf319ab03b5f25c7c56259a5c1fbac860d",
+      "size": 16406
+    },
+    "discovery_nodes.py": {
+      "mode": 493,
+      "sha256": "f4a57b7dbdd07883a39badd872a27a74ab22309a46cb669f085cf4e878fecb7b",
+      "size": 90435
+    },
+    "docker.sh": {
+      "mode": 493,
+      "sha256": "0a91b753805bdbc4f3a70eeb1c35744dd39e11b8633d21c466958cf33642a998",
+      "size": 11697
+    },
+    "ft_network_config.py": {
+      "mode": 420,
+      "sha256": "e89c123653101ed09beb021f20eb969b3b038e0dd80338155371613e38583a4c",
+      "size": 20384
+    },
+    "ft_network_http.py": {
+      "mode": 420,
+      "sha256": "3e7f3fe37a01e325f1cb2ef432e428629b694651327393d470e6b27d27217b97",
+      "size": 5179
+    },
+    "ft_package.py": {
+      "mode": 420,
+      "sha256": "ccead9f8538e5898b5bbc5e4d6850e9df64e3973c9cb2f24b7c6ec3b4484c050",
+      "size": 12474
+    },
+    "ft_update_bootstrap.py": {
+      "mode": 420,
+      "sha256": "f2f866fb26f4eb66e971f4a94fb9f2878036ca233a235903e38a351cf55a6323",
+      "size": 8734
+    },
+    "ft_update_install.py": {
+      "mode": 420,
+      "sha256": "b257475fcaee627e42684f008138ab69baf694f8453ed77712f23912766e1381",
+      "size": 17784
+    },
+    "ft_update_service.py": {
+      "mode": 420,
+      "sha256": "0cf66edcf785baeb7a36940393e2790d1c0df182eb7516bc8211cd33cf7c5742",
+      "size": 8851
+    },
+    "ft_updates.py": {
+      "mode": 420,
+      "sha256": "16f258f2cf8fca42fa219ba27a7323dbbf6909ff81a45c3d74f2c3b23bde786b",
+      "size": 16885
+    },
+    "github_auth.py": {
+      "mode": 420,
+      "sha256": "5343cded019a4881cc93c7c88a419e5b517fab3509df56f4d51ca3b09bdf4d54",
+      "size": 2136
+    },
+    "install.sh": {
+      "mode": 493,
+      "sha256": "13101f545b3cdd78e9bab831c0a8cd8b1e9fad7a9c9f46d6bef950bd1decf8c5",
+      "size": 20540
+    },
+    "licenses/securesystemslib-MIT.txt": {
+      "mode": 420,
+      "sha256": "6357addf59ba70a824bc678c35e0936916e1cc38182f503372147191ed227bd3",
+      "size": 1082
+    },
+    "licenses/tuf-APACHE-2.0.txt": {
+      "mode": 420,
+      "sha256": "d3174ad63e721d4c9dccb8ad4320848992d314369bc46319720b5802c9153fe9",
+      "size": 9694
+    },
+    "licenses/tuf-MIT.txt": {
+      "mode": 420,
+      "sha256": "ad52fe92b0d21a9b3733b484eb6f865e83855f4a6f9b9b8812b9012dc4587d27",
+      "size": 1086
+    },
+    "log_archive.py": {
+      "mode": 420,
+      "sha256": "e00e45fd16935db543bc85dfcf688889ace3ce42e4c2e6337e04b0c853deb06b",
+      "size": 11250
+    },
+    "network-config.py": {
+      "mode": 493,
+      "sha256": "4ea7d57ac39029c9dc6de159bfa4161abab6626c4e48a8a591053f87a39b914e",
+      "size": 296
+    },
+    "network_directory.py": {
+      "mode": 420,
+      "sha256": "0afec89b30ea13422a539c13cb3e86f5781d7ce922573a0d1486b2c1b867d084",
+      "size": 23250
+    },
+    "package_prerequisites.sh": {
+      "mode": 493,
+      "sha256": "17d5461c536729261867744b7864ee3db949a12796a904264ef43ac3785b6ea6",
+      "size": 1169
+    },
+    "requirements.txt": {
+      "mode": 420,
+      "sha256": "2a23bb387cae26aefd600166c7d021a8286bd0165a8e80f8460c92c5f559ee9a",
+      "size": 697
+    },
+    "uninstall.py": {
+      "mode": 493,
+      "sha256": "30b2a840fc4b607c8545d49c299a566cb11b574d341aeabd826a784d150b32c1",
+      "size": 212
+    },
+    "update-root.json": {
+      "mode": 420,
+      "sha256": "3284163cc9835a36f73eba50bfc73cd69dcdf6e8898ed20880112ca8cdf58013",
+      "size": 1568
+    },
+    "update-source.json": {
+      "mode": 420,
+      "sha256": "e7232991b69f25e096b9d0315b5ad2d20671e3ba82c1ee2f49b82891b3dc2f97",
+      "size": 145
+    },
+    "update.py": {
+      "mode": 493,
+      "sha256": "12091ecfaa30e2b50f002393afd82cbcc80f73e5b1704f291a9f62cdabab75e6",
+      "size": 236
+    },
+    "upgrade.py": {
+      "mode": 493,
+      "sha256": "4d91b8b6f967ed6385dd17e634b4b46d82504b3b05dcaff205ba3e3d4f7fd8e5",
+      "size": 1868
+    }
+  },
+  "product": "discovery",
+  "schema": 1
+}

@@ -1,0 +1,18 @@
+# What the discovery nodes need. Unlike the price service, these read the
+# chain: the registries say which Vault Keeper addresses are real, and the
+# network directory is read from the chain once a minute and served to every
+# Data Owner.
+web3==7.16.0
+eth-account==0.13.7
+
+# Where a keeper is, from the IP it announces. Both are optional at runtime --
+# a node without them serves every record with an empty location rather than
+# refusing to start -- but a directory with no locations is a worse answer.
+IP2Location==8.11.0
+geoip2==5.3.0
+
+# Authenticated application update notices, independent of chain/network settings.
+tuf==7.0.1
+securesystemslib==1.6.0
+requests==2.34.2
+cryptography==49.0.0
