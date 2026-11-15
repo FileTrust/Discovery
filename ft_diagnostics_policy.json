@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "endpoint": "https://reports.filetrust.io/v1/reports",
+  "operations": {
+    "DO": [
+      "startup",
+      "network.config",
+      "chain.read",
+      "chain.transaction",
+      "upload.prepare",
+      "upload.encrypt",
+      "upload.transfer",
+      "upload.register",
+      "access.manage",
+      "dkg.recover"
+    ],
+    "REQ": [
+      "startup",
+      "network.config",
+      "chain.read",
+      "chain.transaction",
+      "download.authorize",
+      "download.transfer",
+      "download.decrypt",
+      "download.extract"
+    ],
+    "VK": [
+      "startup",
+      "network.config",
+      "chain.read",
+      "chain.transaction",
+      "storage.read",
+      "storage.write",
+      "storage.delete",
+      "proof.generate",
+      "proof.submit",
+      "worker.supervise"
+    ],
+    "G": [
+      "startup",
+      "network.config",
+      "chain.read",
+      "chain.transaction",
+      "dkg.commit",
+      "dkg.share",
+      "dkg.recover",
+      "pre.transform",
+      "proof.generate",
+      "proof.submit",
+      "worker.supervise"
+    ],
+    "REP": [
+      "startup",
+      "network.config",
+      "chain.read",
+      "chain.transaction",
+      "guardian.fetch",
+      "report.batch",
+      "report.submit"
+    ],
+    "DISC": [
+      "startup",
+      "network.config",
+      "chain.read",
+      "chain.transaction",
+      "discovery.announce",
+      "discovery.lookup",
+      "discovery.sync",
+      "directory.refresh"
+    ]
+  },
+  "exception_types": [
+    "Exception",
+    "RuntimeError",
+    "ValueError",
+    "TypeError",
+    "KeyError",
+    "IndexError",
+    "OSError",
+    "FileNotFoundError",
+    "PermissionError",
+    "TimeoutError",
+    "ConnectionError",
+    "JSONDecodeError",
+    "InvalidTag",
+    "ContractLogicError",
+    "TransactionNotFound",
+    "BadFunctionCallOutput",
+    "HTTPError",
+    "URLError",
+    "error",
+    "panic",
+    "unknown"
+  ],
+  "error_codes": [
+    "FT_UNEXPECTED_ERROR",
+    "FT_OPERATION_FAILED",
+    "FT_NETWORK_UNAVAILABLE",
+    "FT_CHAIN_READ_FAILED",
+    "FT_TRANSACTION_FAILED",
+    "FT_CRYPTO_FAILED",
+    "FT_STORAGE_FAILED",
+    "FT_PROOF_FAILED",
+    "FT_WORKER_EXITED",
+    "FT_STARTUP_FAILED",
+    "FT_INVALID_RESPONSE",
+    "FT_DIAGNOSTIC_TEST"
+  ],
+  "app": "DISC",
+  "release": "0.2.0",
+  "releases": [
+    "0.2.0"
+  ],
+  "files": {
+    "attack_test.py": 1358,
+    "container_cli.py": 314,
+    "diagnostics.py": 5,
+    "discovery_nodes.py": 2202,
+    "ft_diagnostics.py": 479,
+    "ft_network_config.py": 310,
+    "ft_network_http.py": 128,
+    "ft_package.py": 245,
+    "ft_update_bootstrap.py": 207,
+    "ft_update_install.py": 316,
+    "ft_update_service.py": 172,
+    "ft_updates.py": 333,
+    "github_auth.py": 54,
+    "log_archive.py": 355,
+    "network-config.py": 8,
+    "network_directory.py": 544,
+    "smoke_test.py": 319,
+    "uninstall.py": 7,
+    "update.py": 7,
+    "upgrade.py": 32
+  },
+  "source_root": ".",
+  "file_prefix": "",
+  "file_operations": {
+    "discovery_nodes.py": "discovery.sync"
+  }
+}

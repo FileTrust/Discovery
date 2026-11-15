@@ -2,8 +2,8 @@
   "files": {
     ".dockerignore": {
       "mode": 420,
-      "sha256": "92d22044a6447a78091aa393a82783aa7cc03dc95651fa943c2ec1299284e74c",
-      "size": 665
+      "sha256": "f4a5abe6d1dc847b7968ae7a8ba502c4fe5537d6f636874e0f0cd38e4d97534c",
+      "size": 728
     },
     ".gitignore": {
       "mode": 420,
@@ -47,23 +47,38 @@
     },
     "config.default.json": {
       "mode": 420,
-      "sha256": "b92e894b7856bb73376fb42fb1b48bb86895a78870bf2f45a635df137190c698",
-      "size": 2571
+      "sha256": "8c396bf887060ba18f77fb947977df76b2d1b516db30d504be6de3e5d614b984",
+      "size": 2945
     },
     "container_cli.py": {
       "mode": 420,
       "sha256": "8e13a1408c07623ee101f9fe4bd463cf319ab03b5f25c7c56259a5c1fbac860d",
       "size": 16406
     },
+    "diagnostics.py": {
+      "mode": 493,
+      "sha256": "c5580a97820df13a3d6e77e1ddf8b4e5e51f567b5a9a0a392d979f201ea86422",
+      "size": 110
+    },
     "discovery_nodes.py": {
       "mode": 493,
-      "sha256": "f4a57b7dbdd07883a39badd872a27a74ab22309a46cb669f085cf4e878fecb7b",
-      "size": 90435
+      "sha256": "b766a7082ba44421fd678714fd87a85ee5e06ef378189c6af45875e0c688f38a",
+      "size": 90888
     },
     "docker.sh": {
       "mode": 493,
       "sha256": "0a91b753805bdbc4f3a70eeb1c35744dd39e11b8633d21c466958cf33642a998",
       "size": 11697
+    },
+    "ft_diagnostics.py": {
+      "mode": 420,
+      "sha256": "9b5a2440a61ed519dd4969148cd1253f8eec3d3cbeaa89d522cade3cdbef2256",
+      "size": 23618
+    },
+    "ft_diagnostics_policy.json": {
+      "mode": 420,
+      "sha256": "01d38e0843c9c9c65b5c6bf5577fc0a9bf1c92c834434ba0d91412573d0acf98",
+      "size": 3006
     },
     "ft_network_config.py": {
       "mode": 420,

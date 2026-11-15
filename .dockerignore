@@ -10,8 +10,11 @@
 !compose.yaml
 !config.default.json
 !container_cli.py
+!diagnostics.py
 !discovery_nodes.py
 !docker.sh
+!ft_diagnostics.py
+!ft_diagnostics_policy.json
 !ft_network_config.py
 !ft_network_http.py
 !ft_package.py

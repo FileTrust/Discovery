@@ -31,6 +31,13 @@ import network_directory as ND
 # archiver.
 _LOG_ARCHIVER_STARTED = False
 
+
+class DiagnosticHTTPServer(ThreadingHTTPServer):
+    def handle_error(self, request, client_address):
+        from ft_diagnostics import capture_current
+        capture_current(operation="discovery.lookup")
+        super().handle_error(request, client_address)
+
 try:
     from eth_account import Account
     from eth_account.messages import encode_defunct
@@ -1055,6 +1062,9 @@ class DiscoveryState:
         return self.public_dir / f"{self.node_id}.directory.json"
 
     def log(self, message: str) -> None:
+        if sys.exc_info()[1] is not None:
+            from ft_diagnostics import capture_current
+            capture_current()
         line = f"{iso_ts()} [{self.node_id}] {safe_for_log(message)}"
         print(label_discovery_log(line))
         try:
@@ -1995,7 +2005,7 @@ def node_from_config(
             f"WARNING: {node_id} trusts X-Forwarded-For while bound to {host}; "
             "any caller can then forge its own source address"
         )
-    server = ThreadingHTTPServer((host, port), DiscoveryHandler)
+    server = DiagnosticHTTPServer((host, port), DiscoveryHandler)
     server.discovery_state = state  # type: ignore[attr-defined]
     return server
 
@@ -2187,4 +2197,6 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    from ft_diagnostics import start
+    start(home=BASE_DIR)
     raise SystemExit(main())
