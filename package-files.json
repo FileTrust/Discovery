@@ -47,8 +47,8 @@
     },
     "config.default.json": {
       "mode": 420,
-      "sha256": "8c396bf887060ba18f77fb947977df76b2d1b516db30d504be6de3e5d614b984",
-      "size": 2945
+      "sha256": "b92e894b7856bb73376fb42fb1b48bb86895a78870bf2f45a635df137190c698",
+      "size": 2571
     },
     "container_cli.py": {
       "mode": 420,

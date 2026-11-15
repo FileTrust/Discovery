@@ -20,22 +20,6 @@
       "public_url": "http://127.0.0.1:4601",
       "node_address": "",
       "node_private_key": ""
-    },
-    {
-      "id": "discovery-2",
-      "host": "127.0.0.1",
-      "port": 4602,
-      "public_url": "http://127.0.0.1:4602",
-      "node_address": "",
-      "node_private_key": ""
-    },
-    {
-      "id": "discovery-3",
-      "host": "127.0.0.1",
-      "port": 4603,
-      "public_url": "http://127.0.0.1:4603",
-      "node_address": "",
-      "node_private_key": ""
     }
   ],
   "sign_node_sync": true,
